@@ -50,7 +50,6 @@ body {
   float: left;
   width: 25%;
   padding: -200px;
-  margin-trim: 10%;
 }
 
 /* Clearfix (clear floats) */
@@ -58,4 +57,5 @@ body {
   content: "";
   clear: both;
   display: table;
+  flex-wrap: nowrap;
 }
