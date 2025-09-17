@@ -20,15 +20,17 @@ body {
 }
 }
 
-.lineaRectaH{
+.lineahorizontal{
 
      width: 100%;
     height: 0%;
     border: 3px solid black; /* borde de la figura: grosor, estilo, color */
     position: absolute;
     top: 25%;
-     transform: translateY(-100px);
+     z-index: 10;
+      transform: translateY(-80px); /* Moves the title 10px higher without affecting surrounding elements */
 }
+
 .subtitulo{
     color:rgb(129, 95, 52);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
@@ -36,19 +38,24 @@ body {
     font-style: normal;
     font-size: 5em;
     text-align: center; 
-    transform: translateY(10px); /* Moves the title 10px higher without affecting surrounding elements */
+    transform: translateY(-60px); /* Moves the title 10px higher without affecting surrounding elements */
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
 .parrafo{
     color:rgb(128, 62, 15);
     background-color: rgb(255, 247, 234);
 }
-#parrafoUnico {
-    color: rgb(147, 72, 18);
+
+.column {
+  float: left;
+  width: 25%;
+  padding: -200px;
+  margin-trim: 10%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
