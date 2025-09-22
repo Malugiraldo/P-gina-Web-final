@@ -10,16 +10,29 @@ body {
 img { 
     max-width: 100%; 
     display: block; 
-    h1, h2, h3, h4 { margin: 0 0 8px; }
-p { margin: 0 0 12px; }
-a { color: inherit; text-decoration: none; }
-a:hover { text-decoration: underline; }
+   
+ h1, h2, h3, h4 { 
+     margin: 0 0 8px; 
+    }
+p { margin: 0 0 12px;
+    color: #333;
+ }
+a { 
+    color: inherit;
+     text-decoration: none; 
+    }
+a:hover { 
+    text-decoration: underline; 
+}
 }
 
 .container {
      width: 95%;
       max-width: 900px; 
       margin: 0 auto;
+      color:rgb(129, 95, 52);
+    font-size: larger;
+
      }
 
 .section { 
@@ -186,12 +199,12 @@ a:hover { text-decoration: underline; }
 
 .subtitulo{
     color:rgb(129, 95, 52);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-    font-weight:200;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:bolder;
     font-style: normal;
-    font-size: 5em;
-    text-align: center; 
-    transform: translateY(-60px); /* Moves the title 10px higher without affecting surrounding elements */
+    font-size: 4em;
+    text-align: center;
+    transform: translateY(-50px);
 }
 
 .parrafo{
@@ -199,3 +212,26 @@ a:hover { text-decoration: underline; }
     background-color: rgb(255, 247, 234);
 }
 
+h3 {
+display: block;
+color:rgb(80, 37, 7);
+font-size: 2em;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+
+img.help1{
+    position: relative;
+    left: 100%;
+    top: 100%;
+
+}
+
+img.help2{
+    position: relative;
+    left: 0%;
+    top: 100%;
+}
