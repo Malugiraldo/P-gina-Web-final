@@ -1,33 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Malu´s Bakery</title>
+    <title>Malu's Bakery — Simple & Tasty</title>
     <!-- Importar la hoja de estilos de la página-->
      <link rel="stylesheet" href="estilo.css" />
      <script src="script.js" defer></script>
 </head>    
+
 <body> 
+    <header class="header">
+    <div class="container">
     <h1 class="título"> Malu´s Bakery</h1> 
-    <div  class="lineaHorizontal"></div>
-    <h2 class="subtitulo" id="subtituloprincipal"> Recetas</h2>
+     <nav class="nav">
+        <a href="#featured">Destacados</a>
+        <a href="#about">Quién soy</a>
+        <a href="#newsletter">Más información</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="row">
-  <div class="column">
-    <img src="Imágenes/vegan-pbars.jpg" alt="Barras de Galleta de mantequilla de maní" style= width="600px" height="500px"></div>
-  <div class="column">
-    <img src= "Imágenes/best-vegan-apple-pie-1.jpg" alt="Pie de Manzana" style= width="600px" height="500px"></div>
-  <div class="column">
-    <img src= "Imágenes/vegan-tiramisu.jpg" alt="Tiramisú" style= width="600px" height="500px"></div>
-     <div class="column">
-    <img src= "Imágenes/galleta twix.jpg" alt="Galleta de Twix" style= width="600px" height="500px"></div>
-</div>
+    <section class="hero">
+    <div class="container">
+      <h2>Recetas.</h2>
+      <p>Postres sencillos y faciles de preparar.</p>
+      <img class="hero-img" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="Fresh bread on a wooden board">
+    </div>
+  </section>
+   <main>
+    <!-- Featured -->
+    <section id="featured" class="section">
+      <div class="container">
+        <h3>Destacados</h3>
+        <div class="cards">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1478144592103-25e218a04891?q=80&w=1200&auto=format&fit=crop" alt="Chocolate cake with ganache">
+            <h4>Torta de Chocolate</h4>
+            <p>Dulce, esponjosa y sencilla.</p>
+          </article>
 
- <p class="parrafo">Barras de Galleta de mantequilla de maní</p>
-   <p class="parrafo">Pie de Manzana</p>
-   <p class="parrafo">Tiramisú</p>
-    <p class="parrafo">Galleta de Twix</p>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop" alt="Stack of pancakes with berries">
+            <h4>Pancakes de avena</h4>
+            <p>Suaves y deliciosos.</p>
+          </article>
 
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=1200&auto=format&fit=crop" alt="Crusty artisan bread">
+            <h4>Pan artesanal</h4>
+            <p>Crocante y facil de preparar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section alt">
+      <div class="container narrow">
+        <h3>Quién es Malu</h3>
+        <p>Me dedico a montar recetas sencillas y ricas que me salvan como foranea</p>
+      </div>
+    </section>
+
+     <section id="newsletter" class="section">
+      <div class="container">
+        <h3>Más información</h3>
+        <form id="newsletterForm" class="newsletter" novalidate>
+          <label class="vh" for="email">Email</label>
+          <input id="email" type="email" placeholder="mgiraldo1206@gmail.com" required />
+          <button type="submit">Subscribción</button>
+          <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container foot">
+      <p>&copy; <span id="year"></span> Malu's Bakery</p>
+      <a href="#">Privacy</a>
+    </div>
+  </footer>
 
 </body>
 </html>
+
+
+
+
+
